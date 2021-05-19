@@ -1,0 +1,31 @@
+.address {
+  font-style: normal;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #222;
+  color: #fff;
+  margin-top: auto;
+  padding: 20px;
+  box-shadow: inset 0 2px 5px rgb(0 0 0 / 33%);
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.copyright {
+  max-width: 300px;
+  margin: 50px auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

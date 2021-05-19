@@ -1,0 +1,58 @@
+.navigation {
+  display: inline-flex;
+  column-gap: 4px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 1.25em;
+}
+.navigationContainer {
+  overflow-y: auto;
+  margin-inline-start: -4px;
+}
+
+.navigationItem {
+  margin: 10px;
+}
+
+.navigationItem a {
+  border-radius: 12px;
+  color: #fe9741;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.navigationItem a:hover,
+.navigationItemActive {
+  background: rgb(254 145 211 / 20%);
+}
+
+.donate {
+  background: #f3a452;
+  border-radius: 25px;
+  color: #fff !important;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  padding: 12px 32px;
+  text-decoration: none;
+  box-shadow: 0 0px 9px 1px rgba(243, 164, 82, 0.4);
+}
+.donate:hover {
+  background: #fff;
+  box-shadow: 0 0px 9px 1px rgba(243, 164, 82, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.donate:hover svg path {
+  fill: #ff9bdb;
+}
+.donate:hover div {
+  color: #f3a452;
+}
+.donate div {
+  margin-left: 12px;
+}

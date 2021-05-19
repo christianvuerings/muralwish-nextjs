@@ -1,5 +1,6 @@
 {
-  "name": "muralwish-nextjs",
+  "name": "muralwish",
+  "description": "Mural Wish",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +9,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "swr": "^0.5.6"
+  },
+  "keywords": [
+    "mural",
+    "muralwish"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.5",
+    "prettier": "2.3.0",
+    "typescript": "^4.2.4"
   }
 }

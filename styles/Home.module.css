@@ -1,121 +1,110 @@
-.container {
+.heroImage {
   min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100%;
+  position: relative;
   align-items: center;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
+.heroImage::before {
+  top: 0;
+  left: 0;
+  content: "";
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
+  height: 100%;
+  opacity: 0.55;
+  position: absolute;
+  background: #000;
+}
+
+.heroInner {
   align-items: center;
-}
-
-.footer a {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  flex-direction: column;
+  margin: 0 20px;
+  position: relative;
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  width: 200px;
+  width: clamp(160px, 40%, 240px);
+}
+.logo > object {
+  margin-top: 8vh;
+  width: 100%;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.heroImage {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+  */
+  height: 61.8vh;
+  max-height: 400px;
+}
+
+.heroDetails {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  padding: 0 0.5em;
+}
+
+@media (min-width: 600px) {
+  .heroDetails {
+    font-size: 16px;
   }
+}
+
+@media (min-width: 1000px) {
+  .heroDetails {
+    font-size: 20px;
+  }
+}
+
+.heroHeadline {
+  margin: 0;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.video {
+  overflow: hidden;
+  position: relative;
+  margin: 60px 30px 0;
+  max-width: 720px;
+  width: 100%;
+}
+
+.video::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.givebutter {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  color: #fff;
+  margin: 40px auto 20px;
+  text-align: center;
 }
