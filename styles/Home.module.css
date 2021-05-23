@@ -1,5 +1,4 @@
 .heroImage {
-  min-height: 100vh;
   height: 100%;
   position: relative;
   align-items: center;
@@ -24,6 +23,21 @@
   flex-direction: column;
   margin: 0 20px;
   position: relative;
+}
+
+.section {
+  background: #e074b8;
+}
+
+.title {
+  width: 100%;
+  max-width: 1020px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+
+  padding: 40px;
+  line-height: 1.6;
 }
 
 .logo {

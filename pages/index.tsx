@@ -6,13 +6,20 @@ export default function Home() {
     <>
       <Meta />
       <div className={styles.container}>
+        <section className={styles.section}>
+          <h1 className={styles.title}>
+            We provide spirit lifting support through mural artwork that
+            empowers critically-ill children to continue to fight.
+          </h1>
+        </section>
+
         <div className={styles.heroInner}>
           <div className={styles.video}>
             <iframe
               title="Mural Wish: Funding Video"
               width="560"
               height="315"
-              src="https://www.youtube-nocookie.com/embed/y3JdzYdo-TI"
+              src="https://www.youtube-nocookie.com/embed/jQs3C6AsS2A"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

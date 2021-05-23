@@ -1,14 +1,15 @@
-import styles from "styles/Page.module.css";
 import config from "config";
 import { request } from "graphql-request";
 import Meta from "components/Meta";
 import useSWR from "swr";
+import Page from "components/Page";
 
 export default function About() {
   const pageQuery = `query AboutPageQuery {
 			page(where: {slug: "about"}) {
 				id
 				content {
+					raw
 					html
 				}
 				slug
@@ -29,10 +30,7 @@ export default function About() {
   return (
     <>
       <Meta title="About" />
-      <div
-        className={styles.page}
-        dangerouslySetInnerHTML={{ __html: data?.page?.content?.html }}
-      ></div>
+      <Page data={data?.page?.content?.raw}></Page>
     </>
   );
 }

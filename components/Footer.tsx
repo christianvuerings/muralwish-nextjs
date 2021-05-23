@@ -38,7 +38,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.copyright}>
-        © {year} Mural Wish. All Rights Reserved.
+        <br /> © {year} Mural Wish. All Rights Reserved. EIN: 85-2426922
       </div>
     </footer>
   );
