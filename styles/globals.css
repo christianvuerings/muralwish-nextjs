@@ -39,3 +39,22 @@ h3 {
 a {
   color: currentColor;
 }
+
+.apply-link {
+  background: #f3a452;
+  border-radius: 12px;
+  color: #fff;
+  display: inline-flex;
+  font-weight: bold;
+  margin: 0 auto;
+  align-items: center;
+  padding: 12px 32px;
+  text-decoration: none;
+  box-shadow: 0 0px 9px 1px rgba(243, 164, 82, 0.4);
+}
+.apply-link:hover {
+  background: #fceaf6;
+  box-shadow: 0 0px 9px 1px rgba(243, 164, 82, 0.8);
+  color: #f3a452;
+  transition: box-shadow 0.3s ease-in-out;
+}

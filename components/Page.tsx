@@ -4,7 +4,11 @@ function Children({ data }) {
   return data.map((child) => {
     if (child.type === "link") {
       return (
-        <a href={child.href}>
+        <a
+          href={child.href}
+          className={child.className}
+          target={child.openInNewTab ? "_blank" : null}
+        >
           <Children data={child.children}></Children>
         </a>
       );
